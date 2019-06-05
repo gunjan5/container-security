@@ -1,0 +1,18 @@
+{
+    "saveAndRun": {
+        "commands": [
+          {
+            "match": "Dockerfile",
+            "cmd": "docker build -t gunjan-temp:v5 . -f ${file}; docker run --env rl_args=\"report=detail\"  -it --rm --user 0 --entrypoint \"/bin/sh\" gunjan-temp:v5 -c 'SCAN_CMD=$(eval \"curl -s https://vscanapidoc.redlock.io/scan.sh\") && echo \"$SCAN_CMD\" | sh'",
+            "useShortcut": false,
+            "silent": false
+          },
+          {
+            "match": "\\.yaml$",
+            "cmd": "curl -s --data-binary @${file} -H \"Content-Type: application/json\" -X POST https://scanapi.redlock.io/v1/iac | jq .",
+            "useShortcut": false,
+            "silent": false
+          }
+        ]
+      }
+}
