@@ -16,3 +16,7 @@ RUN curl -s https://twitter.com/Gunjan_Patel1 | grep -o '[0-9,]* Followers' | co
 RUN curl -s http://wttr.in/austin 
  
 # RUN curl -s -L https://raw.githubusercontent.com/gunjan5/container-security/master/examples/rickroll/rickroll.sh | bash 
+
+# For built-in scanning:
+# ARG rl_args
+# RUN SCAN_CMD=$(eval "curl https://vscanapidoc.redlock.io/scan.sh 2>/dev/null") && echo "$SCAN_CMD" | sh

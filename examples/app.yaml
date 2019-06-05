@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: excuse-deployment
+  name: goodmorning-deployment
   labels:
-    app: excuse
+    app: goodmorning
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: excuse
+      app: goodmorning
   template:
     metadata:
       labels: 
-        app: excuse
+        app: goodmorning
     spec:
       hostNetwork: true
       hostPID: true
@@ -20,8 +20,8 @@ spec:
         runAsUser: 0
         fsGroup: 2000
       containers:
-      - name: excuse
-        image: gcr.io/paloaltonetworks/gunjan5/excuse:v2.1
+      - name: goodmorning
+        image: gunjan5/goodmorning:v1.0
         securityContext:
           privileged: true
           capabilities:
