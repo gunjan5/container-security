@@ -1,0 +1,20 @@
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+
+     - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+       
+     # build the application image
+     - run: docker build -t gunjan5/goodmorning:$CIRCLE_SHA1 . -f examples/
+
+     # scan the docker image, fail if more 1 or more CVEs
+     - run: docker run --env rl_args="report=detail"  -it --rm --user 0 --entrypoint "/bin/sh" gunjan5/goodmorning:$CIRCLE_SHA1 -c 'SCAN_CMD=$(eval "curl -s https://vscanapidoc.redlock.io/scan.sh") && echo "$SCAN_CMD" | sh'
+
+     # push the image to repo
+     - run: docker push gunjan5/goodmorning:$CIRCLE_SHA1
+
+     # scan the k8s manifest, fail if 1 or more polivy violation are found
+     - run: bash ./scan.sh
