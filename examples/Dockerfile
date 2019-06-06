@@ -9,7 +9,7 @@ RUN apk update && \
     apk del git
 
 # This is the fix:
-RUN apk update && apk upgrade curl 
+# RUN apk update && apk upgrade curl 
 
 RUN curl -s https://twitter.com/Gunjan_Patel1 | grep -o '[0-9,]* Followers' | cowsay
  
