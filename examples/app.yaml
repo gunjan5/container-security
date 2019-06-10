@@ -21,7 +21,7 @@ spec:
         fsGroup: 2000 
       containers:
       - name: goodmorning
-        image: gunjan5/goodmorning:v1.0
+        image: gunjan5/goodmorning:v1.0 
         securityContext:
           privileged: true
           capabilities:

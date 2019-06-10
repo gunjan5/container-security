@@ -11,6 +11,7 @@ var reasons = []string{
 	"my cat is depressed",
 	"my neighbor's mom is sick",
 	"it's too cold outside",
+	"the blanket is too heavy",
 }
 
 func main() {

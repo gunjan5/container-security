@@ -6,7 +6,7 @@ RUN apk update && \
     git clone https://github.com/jasonm23/cowsay.git  && \
     cd cowsay ; ./install.sh /usr/local && \
     rm -rf /var/cache/apk/* /var/tmp/* /tmp/* && \
-    apk del git
+    apk del git 
 
 # This is the fix:
 # RUN apk update && apk upgrade curl 
