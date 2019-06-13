@@ -1,12 +1,17 @@
 # Container Security Checklist
 
-You can find the Ignite talk slides: [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
+- Ignite talk slides: [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
 
-Prisma Free API Tutorial: [Prisma_Scanning_Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
+- Prisma Free API Tutorial: [Prisma_Scanning_Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
 
-CircleCI CI build example: [https://circleci.com/gh/gunjan5/container-security](https://circleci.com/gh/gunjan5/container-security)
+- CircleCI CI build example: [https://circleci.com/gh/gunjan5/container-security](https://circleci.com/gh/gunjan5/container-security)
 
-CircleCI config: [config.yml](https://github.com/gunjan5/container-security/blob/master/.circleci/config.yml)
+- CircleCI config: [config.yml](https://github.com/gunjan5/container-security/blob/master/.circleci/config.yml)
+
+- [VS Code](https://code.visualstudio.com/download) IDE Plugin config:
+
+    - Install [Save and Run](https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run)
+    - Edit config and add this config:[vscode-settings.json](https://github.com/gunjan5/container-security/blob/master/vscode-settings.json)
 
 ## Intro
 
