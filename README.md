@@ -1,5 +1,12 @@
 # Container Security Checklist
 
+You can find the Ignite talk slides at [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
+
+Prisma Free API Tutorial at 
+[https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
+
+## Intro
+
 Container technologies are enabling new application architectures for legacy apps, refactored apps, and microservices, among others. However, these new application architectures also introduce new attack vectors including control plane attacks against the orchestrator, network-based attacks across the infrastructure, container repository attacks, and host operating system attacks. According to a December 2018 Datadog survey, containers are now churning 12 times faster than VMs and have an average lifetime of just 12 hours. As a result, container security is a top challenge. In a recent Tripwire survey, 98 percent of respondents felt they needed additional container security capabilities, 75 percent of respondents with more than 100 containers in production had reported an incident, and 42 percent had either delayed or limited container adoption due to security concerns. Although containers are inherently more secure than many other technologies by design, you need to take additional steps to fully secure your container deployments throughout their lifecycle. 
 
 ## Secure the Build Pipeline
