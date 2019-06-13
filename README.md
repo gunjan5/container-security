@@ -1,9 +1,11 @@
 # Container Security Checklist
 
-You can find the Ignite talk slides at [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
+You can find the Ignite talk slides: [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
 
-Prisma Free API Tutorial at 
-[https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
+Prisma Free API Tutorial: [Prisma_Scanning_Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
+
+CircleCI CI build example: [https://circleci.com/gh/gunjan5/container-security](https://circleci.com/gh/gunjan5/container-security)
+CircleCI config: [config.yml](https://github.com/gunjan5/container-security/blob/master/.circleci/config.yml)
 
 ## Intro
 
