@@ -1,17 +1,10 @@
 # Container Security Checklist
-
 - Ignite talk slides: [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
 
-- Prisma Free API Tutorial: [Prisma_Scanning_Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
-
-- CircleCI CI build example: [https://circleci.com/gh/gunjan5/container-security](https://circleci.com/gh/gunjan5/container-security)
-
-- CircleCI config: [config.yml](https://github.com/gunjan5/container-security/blob/master/.circleci/config.yml)
-
-- [VS Code](https://code.visualstudio.com/download) IDE Plugin config:
-
-    - Install [Save and Run](https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run)
-    - Edit config and add this config:[vscode-settings.json](https://github.com/gunjan5/container-security/blob/master/vscode-settings.json)
+#### My Other Related Repos 🔥
+- [Shift Left (Preventive) Security for Containers/Kubernetes](https://github.com/gunjan5/shift-left-security)
+- [Container Security Checklist with Risk Scores](https://github.com/gunjan5/cloud-native-security)
+- [Fun: Container from Scratch](https://github.com/gunjan5/container-from-scratch)
 
 ## Intro
 
@@ -79,3 +72,17 @@ Container technologies are enabling new application architectures for legacy app
 - [x] Automatically scan container images for sensitive data such as tokens, private keys, and so on, before pushing them to a container registry (can be done locally and in CI) 
 - [x] Limit storage related syscalls and capabilities to prevent runtime privilege escalation 
 - [x] Log all successful and unsuccessful attempts to access sensitive data  
+
+
+# Other links
+
+- Prisma Free API Tutorial: [Prisma_Scanning_Tutorial.pdf](https://github.com/gunjan5/container-security/blob/master/Prisma%20Scanning%20Tutorial.pdf)
+
+- CircleCI CI build example: [https://circleci.com/gh/gunjan5/container-security](https://circleci.com/gh/gunjan5/container-security)
+
+- CircleCI config: [config.yml](https://github.com/gunjan5/container-security/blob/master/.circleci/config.yml)
+
+- [VS Code](https://code.visualstudio.com/download) IDE Plugin config:
+
+    - Install [Save and Run](https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run)
+    - Edit config and add this config:[vscode-settings.json](https://github.com/gunjan5/container-security/blob/master/vscode-settings.json)
