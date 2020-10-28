@@ -1,10 +1,12 @@
 # Container Security Checklist
 - Ignite talk slides: [https://bit.ly/container-security-slides](https://bit.ly/container-security-slides)
 
-#### My Other Related Repos 🔥
+### My Other Related Repos 🔥
 - [Shift Left (Preventive) Security for Containers/Kubernetes](https://github.com/gunjan5/shift-left-security)
 - [Container Security Checklist with Risk Scores](https://github.com/gunjan5/cloud-native-security)
 - [Fun: Container from Scratch](https://github.com/gunjan5/container-from-scratch)
+
+![](security-integration-points.png)
 
 ## Intro
 
