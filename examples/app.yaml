@@ -14,21 +14,21 @@ spec:
       labels: 
         app: goodmorning
     spec:
-      hostNetwork: true
-      hostPID: true
+      # hostNetwork: true
+      # hostPID: true
       securityContext:
-        runAsUser: 0
+        # runAsUser: 0
         fsGroup: 2000 
       containers:
       - name: goodmorning
         image: gunjan5/goodmorning:v1.0 
         securityContext:
-          privileged: true
-          capabilities:
-            drop:
-              - all
-            add:
-              - NET_BIND_SERVICE
-              - CAP_SYS_ADMIN
+         #  privileged: true
+         # capabilities:
+         #   drop:
+         #     - all
+         #   add:
+         #     - NET_BIND_SERVICE
+         #     - CAP_SYS_ADMIN
         ports:
         - containerPort: 8080
